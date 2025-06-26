@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/homeImg.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Churros Delight</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <div>CHURROS DELIGHT</div>
+        </div>
+        <div id="links" class="links">
+          <span id="close-menu" class="close-menu"
+            ><i class="fa-solid fa-xmark"></i
+          ></span>
+          <div class="logo">
+            <div>CHURROS DELIGHT</div>
+          </div>
+          <a href="#home">Home</a>
+          <a href="#order">Order</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="icons">
+          <a><i class="fa-brands fa-facebook-f"></i></a>
+          <a><i class="fa-brands fa-instagram"></i></a>
+          <a><i class="fa-brands fa-linkedin-in"></i></a>
+          <a
+            style="color: #c93448"
+            class="toggle-menu"
+            onclick="openCloseMenu()"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <div id="home" class="home">
+      <div class="container">
+        <div class="text-side">
+          <h4>Welcome to</h4>
+          <h1><span>Churros Delight</span></h1>
+          <p>
+            Start your day with a sweet and fresh churros treat! <br />
+            Enjoy a new experience with our automatic churros maker!
+          </p>
+          <button><a href="#order">Order Now!</a></button>
+        </div>
+        <div class="img-side">
+          <img class="inner-img" src="assets/homeImg.png" alt="" />
+        </div>
+      </div>
+      <div style="margin-right: 2.5%" class="line"></div>
+    </div>
+    <section style="position: relative" id="order" class="order">
+      <div class="container">
+        <h2>Make An Order</h2>
+        <h3>
+          This crispy churro has a <span>Light</span> and
+          <span>Fluffy</span> interior with a crispy exterior. These churros can
+          be ordered in a <span>Variety of Package Sizes</span> , with delicious
+          <span>Sugar and Cinnamon Sprinkling </span>, and
+          <span>Chocolate Sauce.</span>
+        </h3>
+        <h3>Please pay by your card.</h3>
+        <table
+          border="1"
+          cellpadding="10"
+          style="border-collapse: collapse; text-align: center"
+        >
+          <tr>
+            <td>Small (S)</td>
+            <td>2 pieces</td>
+            <td>₪15.00</td>
+          </tr>
+          <tr>
+            <td>Medium (M)</td>
+            <td>4 pieces</td>
+            <td>₪25.00</td>
+          </tr>
+          <tr>
+            <td>Large (L)</td>
+            <td>6 pieces</td>
+            <td>₪35.00</td>
+          </tr>
+        </table>
+        <div class="button-container">
+          <button onclick="sendPackage('S')">Order Small</button>
+          <button onclick="sendPackage('M')">Order Medium</button>
+          <button onclick="sendPackage('L')">Order Large</button>
+        </div>
+      </div>
+      <div class="line"></div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact US</h2>
+        <div class="contact-grid">
+          <div class="send-message-form">
+            <h3>Send us a message</h3>
+            <form>
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="contact-information">
+            <h3>Contact Information</h3>
+            <div style="padding: 10px">
+              <p>
+                <i class="fa-solid fa-map-marker-alt"></i>
+                123 Street, Nablus, Palestine
+              </p>
+              <p><i class="fa-solid fa-phone"></i> +972 56-910-0008</p>
+              <p>
+                <i class="fa-solid fa-envelope"></i> churrosdelight@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+    </section>
+    <footer>
+      <div id="links" class="links">
+        <a href="#home">Home</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="img-side">
+        <img
+          class="inner-img"
+          src="https://i.postimg.cc/7YpV4JF1/homeImg.png"
+          alt=""
+        />
+      </div>
+      <div style="display: flex; gap: 50px">
+        <p style="font-size: 20px; color: #c93448">
+          &copy; 2025 Churros Delight. All rights reserved.
+        </p>
+        <div class="scroll-to-top">
+          <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
